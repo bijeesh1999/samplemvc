@@ -1,0 +1,7 @@
+exports.errors={
+    NOT_FOUNT:404,
+    VALIDATIONERR:400,
+    UNAUTHORISED:401,
+    FORBIDDEN:403,
+    SERVER_ERR:500,
+};

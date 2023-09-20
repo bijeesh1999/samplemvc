@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user register</title>
+    <link rel="stylesheet" href="/css/landing.css">
+</head>
+<body>
+
+    <div class="wraper">
+
+        <div class="sucess" id="torf">
+            user registration sucess
+        </div>
+
+
+
+        <div class="button" id="logbtn">
+            <button id="register" onclick="register()">register</button>
+            <a href="/emplog"><button id="login" >login</button></a>
+        </div>
+
+        <!-- user registration -->
+
+        <form class="modal rgstr" id="regmdl">
+            <header>register</header>
+
+            <input type="text" id="username" name="username"placeholder="Username">
+            <input type="email" name="email" placeholder="email" id="email">
+            <input type="password" name="password" placeholder="password" id="password">
+
+            <button type="submit" id="rgstr">register</button>
+
+        </form>
+
+        <!-- ========================== -->
+    </div>
+
+    <script src="/js/admin.js"></script>
+</body>
+</html>
+
+<!-- <a href="./empl">login</a> -->

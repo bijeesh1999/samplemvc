@@ -1,0 +1,166 @@
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header b-0">
+            <header><h4>Basic Details</h4></header>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+
+
+
+            <form id="addmodal" class="col-8 main  bg-white " name="userform"  enctype="multipart/form-data"  onsubmit="return validation()">
+                <!-- <header><h4>Basic Details</h4><i class="fa-solid fa-xmark"></i></header>  onsubmit="return validation()" -->
+                <div class="card">
+                    <div class="card-body">
+                    <input class="form-control" type="file" id="formFile" name="image" accept="image/*">
+                    <!-- <input  type="file" id="formFile" name="image" accept="image/*"> -->
+
+                  </div>
+                  <div class="upload">
+                    <i class="fa-solid fa-file-arrow-up text-primary"></i> 
+                    <h6 class="text-primary">Upload Image</h6> 
+                    <h6 class="png">PNG, JPG files are allowed</h6>
+                </div>
+                <div id="singleimg"><i class="fa fa-duotone fa-user-secret"></i></div>
+                </div>
+                <div class="row input">
+                    <div class="col-3  imp">
+                        <label for="user" class="form-label salutation ">Salutation<span class="text-danger">*</span></label>
+                            <select id="user" class="form-label mb-0  selections"  name="userlist" form="userform">
+                            <!-- <option class="select " selected>select</option> -->
+                            <option value="mr" selected>Mr</option>
+                            <option value="mrs">Mrs</option>
+                            <option value="dr">Dr</option>
+                            <option value="adv">Adv</option>
+                            <option value="adv">Other</option>
+                        </select>
+                    </div>
+                    <!-- <label for="exampleInputEmail1">Email address</label> -->
+                    <div class="col imp" id="imp">
+                        <label for="validationCustom01" class="form-label">First name<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="validationCustom01" name="myfname" placeholder="joe" autocomplete="off">
+                        <!-- <input placeholder="Enter search term" aria-label="Enter search term"> -->
+                        <!-- <div class="valid-feedback">
+                          Looks good!
+                        </div> -->
+                    </div>
+                    <div class="col imp">
+                        <label for="validationCustom02" class="form-label">Last name<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="doe"aria-label="Enter search term" >
+                        <div class="valid-feedback">
+                         Looks good!
+                    </div>
+                    </div>
+                 </div>
+                 <div class="row input">
+                    <div class="col imp">
+                        <label for="Email1" class="form-label">Email address<span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="Email1"  placeholder="example@gmail.com">
+                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+                    <div class="col imp">
+                        <label for="typePhone" class="form-label">Mobile number<span class="text-danger">*</span></label>
+                        <input type="tel" id="typePhone" class="form-control"placeholder="Enter Phone" />
+                    </div>
+                 </div>
+
+                 <div class="row input">
+                    <div class="col imp">
+                        <label for="username" class="form-label">username<span class="text-danger">*</span></label>
+                        <input type="username" class="form-control" id="username" aria-describedby="emailHelp" placeholder="enter pass">
+                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+                    <div class="col imp">
+                        <label for="password" class="form-label">password<span class="text-danger">*</span></label>
+                        <input type="password" id="password" class="form-control"placeholder="Enter password" />
+                    </div>
+                 </div>
+
+
+
+
+
+                 <div class="row input">
+                    <div class="col-6 imp"> 
+                        <label for="date" class="form-label text-capitalize">Date of Birth<span class="text-danger">*</span></label>
+                            <input id="date" class="form-control" type = "date" name = "date" >  
+                    </div> 
+                    <div class="col imp radio">
+                        <div class="row gap">
+                            <label for="Gender" class="form-label imp">Gender<span class="text-danger">*</span></label>
+                            <div class="col gap" id="radio">
+                                <input class="form-check-input Gender" type="radio" name="Gender" value="male" id="flexRadioDefault1"checked><label class="form-label">Male</label>
+                                <input class="form-check-input Gender" type="radio" name="Gender" value="female" id="flexRadioDefault0" ><label class="form-label">Female</label>      
+                                <!-- <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault09" >Other       -->
+
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    </div>
+
+
+                    <div class="col-12">
+                        <label for="Qualification" class="form-label">Qualification<span class="text-danger">*</span></label>
+                        <input type="text" id="Qualification" class="form-control"name="Qualification" placeholder="Enter Qualification" />
+
+                    </div>
+
+                    <div class="col-12">
+                        <label for="exampleInputEmail1" class="form-label">Address<span class="text-danger">*</span></label>
+                        <input type="text" id="homename" class="form-control"name="address" placeholder="Enter Adderss" />
+
+                    </div>
+
+
+
+
+                    
+                    <div class="row input">
+                        <div class="col imp">
+                            <label for="exampleInputEmail1" class="form-label">Country<span class="text-danger">*</span></label>
+                            <select id="Country"  name="carlist" form="carform" class="selections">
+                                <!-- <option class="select" selected>select Country</option> -->
+                                <option value="India" selected>India</Ioption>
+                                <option value="America">America</option>
+                                <option value="Jappan">Jappan</option>
+                                <option value="UK">UK</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col imp">
+                            <label for="exampleInputEmail1" class="form-label">State<span class="text-danger">*</span></label>
+                            <select id="state"  name="carlist" form="carform" class="selections">
+                                <!-- <option class="select" selected>select state</option> -->
+                                <option value="Kerala" selected>Kerala</option>
+                                <option value="TamilNadu">TamilNadu</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Bangloor">Bangloor</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row input">
+                        <div class="col imp">
+                            <label for="city" class="form-label">City<span class="text-danger">*</span></label>
+                            <input type="text" id="city" class="form-control"placeholder="Enter City" />
+                        </div>
+                        <div class="col imp">
+                            <label for="Pin/Zip" class="form-label">Pin/Zip<span class="text-danger">*</span></label>
+                            <input type="text" id="pin" class="form-control"placeholder="Pin/Zip" />
+                        </div>
+                    </div>
+                <!-- </form>  -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn text-primary me-sm-2" data-bs-dismiss="modal" onclick="reload()">Cancel</button>
+                <button type="submit" class="btn btn-primary py-3" id="addemp">add employee</button>
+            </div>
+        </form> 
+        </div> 
+        
+        </div>
+        </div> 
+        

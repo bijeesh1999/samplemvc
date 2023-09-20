@@ -1,0 +1,76 @@
+
+    <%- include('head') %>
+   
+        
+
+        <%- include('left') %>
+
+        <div class="emppage ">
+        <%- include('search') %>
+        </div>
+
+        
+     
+        <%- include('right') %>
+
+        <!-- employee add modal -->
+
+        <%- include('addempmodal') %>
+
+        <!-- ====================== -->
+        
+        
+
+
+<!-- ================edit emp=============== -->
+
+<%- include('edit') %>
+
+<!-- ================ -->
+
+   
+
+
+                
+
+           
+     
+    <!-- <br> -->
+
+
+               <!-- +++++++++++++++++++++++++++++++++++++ emp form end +++++++++++++++++++++++++++++++++++ -->
+
+                        
+
+
+    <div class="deletemodal p-3" id="popup">
+        <header class="py-3">
+           <h3>delete employee</h3>
+        </header>
+        <div class="modalb py-3">
+           <P >do you want delete this employee</P>
+        </div>
+       <div class="mfootr py-3">
+           <button class="cancel" onclick="cancel()">cancel</button>
+           <button class="deleting btn btn-danger " id="del">delete</button>
+       </div>
+    </div>
+
+
+
+    <!-- <div id="edit">
+        <p>employee updated succesfully</p>
+        <button id="ok" onclick="ok()">ok</button>
+    </div> -->
+
+
+<div id="shade" onclick="cancel()"></div>
+
+
+
+<%- include('footerend') %>
+
+
+    <!-- bootstrap js connection -->
+    
+  

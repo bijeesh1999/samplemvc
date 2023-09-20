@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+
+.wraper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+    gap: 2rem;
+    background-image: url("/img/ocean-3605547_1280.jpg");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+#register{
+    padding: 20px 52px;
+    font-size: 20px;
+    border-radius: 10px;
+    opacity: .8;
+
+}
+
+#login{
+    padding: 20px 63px;
+    font-size: 20px;
+    border-radius: 10px;
+    opacity: .8;
+
+}
+
+#register:hover,#login:hover{
+    border: 3px solid green;
+    color: green;
+
+}
+
+.rgstr,.logn{
+    display: flex;
+    padding: 2rem 0;
+    flex-direction: column;
+    gap: 20px;
+    width: 22rem;
+    background-color: #212134;
+    height: 23rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    position: absolute;
+    top: -150%;
+    opacity: .7;
+    transition: .9s;
+    border-radius: 30px 0 ;
+    box-shadow: 0px 4px 9px 2px #ffff;
+}
+
+.logn{
+    position: unset !important;
+}
+
+input{
+    padding: 10px;
+    height: 20px;
+    width: 16rem;
+    border: 0;
+    border-bottom: 2px solid white;
+    background-color: #212134;
+    font-size: 20px;
+    color: white;
+    
+}
+
+header{
+    font-size: 2rem;
+    color: white;
+    font-weight: 100;
+}
+
+input:focus {
+    outline: none;
+  }
+
+  ::placeholder{
+    color: white;
+  }
+
+#rgstr,#logn{
+        background: 0;
+        border: 0;
+        font-size: 1rem;
+        float: right;
+        padding: 10px 20px;
+        background-color: white;
+        border-radius: 10px;
+        font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.sucess{
+    width: 100%;
+    height: 3rem;
+    background-color: #212134;
+    border: 2px solid greenyellow;
+    color: greenyellow;
+    opacity: .9;
+    right: -120%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .7s;
+}
+    
