@@ -5,9 +5,9 @@ const session=require('express-session')
 const mongoose=require('mongoose');
 const errorhandler = require('./midleware/errorh');
 const body=require('body-parser')
-const multer=require('multer')
+// const multer=require('multer')
 
-// const mongodb=require('connect-mongodb-session')(session)
+const mongodb=require('connect-mongodb-session')(session)
 
 app.use(express.json());
 app.use(body.urlencoded({ extended: true }));
@@ -35,8 +35,7 @@ app.use(
 app.set('view engine','ejs')
 app.use('/css',express.static(path.resolve(__dirname,'collections/css')));
 app.use('/img',express.static(path.resolve(__dirname,'collections/img')));
-app.use('/js',express.static(path.resolve(__dirname,'collections/js')));
-// app.use('/empimage',express.static(path.resolve(__dirname,'empimage')));
+app.use('/js',express.static(path.resolve(__dirname,'collections/js'))); 
 
 
 
@@ -87,12 +86,6 @@ app.get('/empl',isAuth, (req,res)=>{
 app.use('/empls',require('./routes/route'));
 app.use('/',require('./routes/routUser'));
 app.use(errorhandler);
-
-// ==================logout===========
-
-
-
-// =====================
 
 
 

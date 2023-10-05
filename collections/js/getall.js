@@ -601,17 +601,17 @@ function validation(){
 
 //========================flash img===================
 
-var input=document.getElementById('formFile')
-var newimg=document.getElementById('singleimg')
-input.addEventListener('change',flashimg);
+// var input=document.getElementById('formFile')
+// var newimg=document.getElementById('singleimg')
+// input.addEventListener('change',flashimg);
 
-function flashimg(){
-    let img=URL.createObjectURL(input.files[0])
-    let imgsrc=document.createElement('img');
-    imgsrc.src=img;
-    newimg.textContent="";
-    newimg.appendChild(imgsrc)
-}
+// function flashimg(){
+//     let img=URL.createObjectURL(input.files[0])
+//     let imgsrc=document.createElement('img');
+//     imgsrc.src=img;
+//     newimg.textContent="";
+//     newimg.appendChild(imgsrc)
+// }
 
 var editinput=document.getElementById('editfile')    //editing image input file
 var newedit=document.getElementById('editimg')       //appending place
@@ -627,7 +627,7 @@ function editimg(){
 
 
 
-// 
+
 
 
 
