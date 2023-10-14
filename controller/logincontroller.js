@@ -1,9 +1,9 @@
 
-const asymchHandler=require('express-async-handler')
+const asynchHandler=require('express-async-handler')
 const bcrypt=require('bcrypt')
 const user=require("../employees/empreg")
 
-const userregister=asymchHandler( async (req,res)=>{
+const userregister=asynchHandler( async (req,res)=>{
     const {email,username,password}=req.body;
     if (!email||!username||!password){
         res.status(400)
@@ -34,7 +34,7 @@ const userregister=asymchHandler( async (req,res)=>{
 // =============================================================
 // =============================================================
 
-const userlogin=asymchHandler(async(req,res)=>{
+const userlogin=asynchHandler(async(req,res)=>{
 
 
     const {email,password}=req.body;
